@@ -1,6 +1,6 @@
 @font-face {
 	font-family: NeueMontreal;
-	src: url(./font/NeueMontreal.woff2);
+	src: url(./font/NeueMontreal-Regular.woff);
 }
 
 * {
@@ -136,6 +136,7 @@ header{
 	padding-bottom: 2.6rem;
 	width: 51.3rem;
 	margin: auto;
+	
 }
 .text-larger {
 	font-size: 4rem !important;
