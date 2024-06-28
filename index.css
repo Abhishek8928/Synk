@@ -52,7 +52,8 @@ header{
 .nav-btn-action > button {
 	border-radius: 2.5rem;
 	font-size: 1.6rem;
-	padding: 1.2rem 2rem;
+	padding: 1.8rem 4rem;
+	
 }
 .nav-btn-action > button:first-child {
 	background-color: rgba(26, 26, 26, 0.4);
@@ -79,28 +80,30 @@ header{
 }
 
 .hero-container > .left-container {
-	width: 58.5rem;
+	width: 60%;
 }
 
 .hero-container > .right-container {
-	width: 40rem;
-	height: 81.7rem;
+	width: 30%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
 }
 .right-container > video {
 	width: 100%;
-	height: 100%;
-	margin-right: -4rem;
 }
 .tag-line {
 	border-radius: 2.4rem;
 	border: 1px solid rgba(55, 55, 55, 1);
 	color: rgba(202, 202, 202, 1);
 	font-size: 1.6rem;
-	padding: 1rem 2.8rem;
+	padding: 1rem 2rem;
 	display: inline-block;
-	box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0.08) inset;
+	box-shadow: 0px 1.11px 0px 0px rgba(255, 255, 255, 0.2) inset;
+
+box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
+
 }
 
 .hero-title {
@@ -114,16 +117,19 @@ header{
 	font-size: 2.4rem;
 	font-weight: 400;
 	color: rgba(123, 123, 123, 1);
-	margin-bottom: 2rem;
+	
 }
 
 .left-container > button {
+	width:20rem;
+	height:5.7rem;
 	border: none;
 	border-radius: 2.5rem;
 	font-size: 1.6rem;
 	padding: 1.2rem 2rem;
 	box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
 		0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
+		margin-top: 4rem;
 }
 .scroll-text-effect {
 	padding-bottom: 4rem;
@@ -152,11 +158,12 @@ header{
 	justify-content: space-between;
 }
 .feature-card {
-	border: 1px solid rgba(41, 41, 41);
+	border: 1px solid rgba(27, 27, 27, 1);
 	border-radius: 2rem;
-	width: 42.2rem;
+	width: 33%;
 	padding: 2.4rem 2.4rem 0 2.4rem;
 	background-color: rgba(16, 16, 16, 1);
+	position: relative;
 }
 
 .card-title {
@@ -171,21 +178,24 @@ header{
 .card-description {
 	font-size: 2rem;
 	color: rgba(134, 134, 134, 1);
-	padding: 2rem 0;
+	padding: 1.2rem 0;
 }
 .feature-img {
 	text-align: center;
 	margin-top: 4rem;
+	
 }
 .feature-img > img {
-	width: 70%;
+	width: 100%;
+	height:30rem;
+	object-fit: contain;
 }
 
 .insights {
-	width: 60%;
+	width: 100%;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 10rem;
 	padding: 4rem 0;
@@ -193,6 +203,7 @@ header{
 .insights-content {
 	width: 47.9rem;
 }
+
 .insights-content > h2 {
 	font-size: 4.2rem;
 	font-weight: 400;
@@ -202,6 +213,7 @@ header{
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
 	padding: 2rem 0;
+	
 }
 .insights-content > button {
 	border-radius: 2.5rem;
@@ -218,7 +230,7 @@ header{
 	height: 61.3rem;
 }
 .profile-info {
-	width: 60%;
+	width: 100%;
 	margin: auto;
 	padding: 4rem 0;
 }
@@ -234,6 +246,7 @@ header{
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
 	padding: 1.4rem 0;
+	width:78%;
 }
 
 .profile-showecase-design {
@@ -243,8 +256,8 @@ header{
 }
 .profile-design {
 	background-color: rgba(16, 16, 16, 1);
-	width: 40rem;
-	height: 30.8rem;
+	width: 36rem;
+	height: 40.8rem;
 	border: 1px solid rgba(27, 27, 27, 1);
 	border-radius: 2rem;
 	text-align: center;
@@ -262,7 +275,7 @@ header{
 }
 
 .profile-design > img {
-	width: 60%;
+	width: 80%;
 }
 
 .cta-section {
@@ -322,17 +335,23 @@ header{
 	color: rgba(122, 122, 122, 1);
 }
 @media (max-width: 1260px) {
+	
+	.main-container,header{
+		padding:0 6rem;
+	}
 	.hero-title {
 		font-size: 8rem;
 	}
-	.hero-container > .left-container {
-		width: 58rem;
+	.hero-container > .right-container{
+		width:35%;
 	}
+ 
 	.hero-title {
 		font-size: 8rem;
 	}
 	.hero-desc {
 		font-size: 2rem;
+		width:100%;
 	}
 
 	.insights {
@@ -341,16 +360,56 @@ header{
 	.profile-info {
 		width: 80%;
 	}
-	.insights-content {
-		width: 42.9rem;
-	}
+	
 	.insights-content > h2 {
-		font-size: 4rem;
+		font-size: 3.4rem;
 	}
+	.insights-content > p {
+		font-size: 2rem;
+	}
+}
+@media (max-width:886px) {
+	html{
+		font-size: 8.6px;
+	}
+	.hero-container {
+		
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap:6rem;
+	}
+
+	.hero-container > .left-container,
+	.right-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.hero-container > .right-container {
+		width: 50%;
+		justify-content: center;
+	}
+	.right-container > video {
+		width:100%;
+	}
+	
+	.features-wrapper {
+		flex-wrap: wrap;
+        gap:1rem;
+	}
+	.feature-card {
+		width: 49%;
+	}
+	
 }
 @media (max-width: 550px) {
 	html {
-		font-size: 8.4px;
+		font-size: 8px;
+	}
+	.hero-desc{
+		
+		font-size: 2rem;
 	}
 	.main-container,header {
 		padding: 0 4rem;
@@ -377,12 +436,11 @@ header{
 
 	.hero-container > .right-container {
 		width: 100%;
-		height: 60rem;
 
 		justify-content: center;
 	}
 	.right-container > video {
-		margin-right: 0;
+		width:100%;
 	}
 
 	.hero-title {
@@ -448,10 +506,10 @@ header{
 		padding-bottom: 6rem;
 	}
 	.profile-content > h3 {
-		font-size: 3.4rem;
+		font-size: 3rem;
 	}
 	.profile-content > p {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 
 	.profile-showecase-design {
