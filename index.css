@@ -10,9 +10,13 @@
 	font-family: NeueMontreal;
 }
 
+
+
 html {
 	font-size: 10px;
 }
+
+
 
 .main-container {
 	width: 100%;
@@ -20,11 +24,19 @@ html {
 	background-color: rgb(10, 10, 11);
 	padding: 0 12rem;
 }
+header{
+	width:100%;
+	position: fixed;
+	position: -webkit-fixed;
+	z-index: 998;
+	top:0;
+	padding:0 12rem;
+}
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 0;
+	padding: 1.8rem 0;
 }
 .synk-logo {
 	font-size: 3.2rem;
@@ -63,16 +75,16 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 8rem 0;
+	padding: 18rem 0  8rem 0;
 }
 
 .hero-container > .left-container {
-	width: 50%;
+	width: 58.5rem;
 }
 
 .hero-container > .right-container {
-	width: 30%;
-	height: 60rem;
+	width: 40rem;
+	height: 81.7rem;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -82,12 +94,13 @@ html {
 	margin-right: -4rem;
 }
 .tag-line {
-	border-radius: 1rem;
+	border-radius: 2.4rem;
 	border: 1px solid rgba(55, 55, 55, 1);
 	color: rgba(202, 202, 202, 1);
 	font-size: 1.6rem;
 	padding: 1rem 2.8rem;
 	display: inline-block;
+	box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0.08) inset;
 }
 
 .hero-title {
@@ -98,7 +111,7 @@ html {
 	line-height: 9rem;
 }
 .hero-desc {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	font-weight: 400;
 	color: rgba(123, 123, 123, 1);
 	margin-bottom: 2rem;
@@ -109,8 +122,8 @@ html {
 	border-radius: 2.5rem;
 	font-size: 1.6rem;
 	padding: 1.2rem 2rem;
-	/* box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), */
-	/* 0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255); */
+	box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
+		0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
 }
 .scroll-text-effect {
 	padding-bottom: 4rem;
@@ -121,9 +134,11 @@ html {
 	font-weight: 400;
 	font-size: 3.2rem;
 	padding-bottom: 2.6rem;
-	width: 52rem;
+	width: 51.3rem;
 	margin: auto;
-	text-align: justify;
+}
+.text-larger {
+	font-size: 4rem !important;
 }
 .scroll-text-effect > p > span {
 	color: #fff;
@@ -132,15 +147,15 @@ html {
 	padding: 2rem 0;
 	width: 100%;
 	display: flex;
+	gap: 1rem;
 	justify-content: space-between;
 }
 .feature-card {
 	border: 1px solid rgba(41, 41, 41);
 	border-radius: 2rem;
-	width: 36rem;
-	padding: 2.4rem;
-	background-color: rgb(23, 23, 22);
-	width: 32%;
+	width: 42.2rem;
+	padding: 2.4rem 2.4rem 0 2.4rem;
+	background-color: rgba(16, 16, 16, 1);
 }
 
 .card-title {
@@ -166,7 +181,7 @@ html {
 }
 
 .insights {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -175,10 +190,10 @@ html {
 	padding: 4rem 0;
 }
 .insights-content {
-	width: 40%;
+	width: 47.9rem;
 }
 .insights-content > h2 {
-	font-size: 4.8rem;
+	font-size: 4.2rem;
 	font-weight: 400;
 	color: #fff;
 }
@@ -194,7 +209,7 @@ html {
 	border: none;
 }
 .insights-video {
-	width: 30%;
+	width: 30rem;
 }
 
 .insights-video > video {
@@ -202,7 +217,7 @@ html {
 	height: 61.3rem;
 }
 .profile-info {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 	padding: 4rem 0;
 }
@@ -298,19 +313,45 @@ html {
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem 0;
-    list-style-type: none;
+	list-style-type: none;
 }
 .footer-links > li {
 	font-size: 2rem;
 	font-weight: 400;
 	color: rgba(122, 122, 122, 1);
 }
+@media (max-width: 1260px) {
+	.hero-title {
+		font-size: 8rem;
+	}
+	.hero-container > .left-container {
+		width: 58rem;
+	}
+	.hero-title {
+		font-size: 8rem;
+	}
+	.hero-desc {
+		font-size: 2rem;
+	}
 
+	.insights {
+		width: 80%;
+	}
+	.profile-info {
+		width: 80%;
+	}
+	.insights-content {
+		width: 42.9rem;
+	}
+	.insights-content > h2 {
+		font-size: 4rem;
+	}
+}
 @media (max-width: 550px) {
 	html {
 		font-size: 8.4px;
 	}
-	.main-container {
+	.main-container,header {
 		padding: 0 4rem;
 	}
 	.nav-btn-action > button:first-child {
@@ -351,92 +392,93 @@ html {
 
 	.left-container > button {
 		box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
-		0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
+			0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
 	}
 	.scroll-text-effect p {
 		font-size: 2.4rem;
 
 		width: 100%;
 	}
-    .features-wrapper{
-        flex-wrap: wrap;
+    .text-larger{
+        font-size: 3.2rem !important;
     }
-    .feature-card {
+	.features-wrapper {
+		flex-wrap: wrap;
+        gap:1rem;
+	}
+	.feature-card {
+		width: 100%;
+	}
 
-	width: 100%;
-    margin-bottom: 4rem;
-}
-    
-.insights {
-	justify-content: center;
-    flex-wrap: wrap-reverse;
-	gap: 6rem;
-    width:100%;
+	.insights {
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+		gap: 6rem;
+		width: 100%;
+	}
+	.insights:last-child {
+		flex-wrap: wrap;
+	}
+	.insights-content {
+		width: 100%;
+	}
+	.insights-content > h2 {
+		font-size: 3.4rem;
+	}
+	.insights-content > p {
+		font-size: 2.2rem;
+		padding-bottom: 4rem;
+	}
 
-}
-.insights:last-child{
-    flex-wrap: wrap;
-}
-.insights-content {
-	width: 100%;
-}
-.insights-content > h2 {
-	font-size: 3.4rem;
-}
-.insights-content > p {
-	font-size: 2.2rem;
-    padding-bottom: 4rem;
-}
+	.insights-video {
+		width: 100%;
+	}
 
-.insights-video {
-	width: 100%;
-}
+	.insights-video > video {
+		width: 100%;
+		height: 61.3rem;
+	}
 
-.insights-video > video {
-	width: 100%;
-	height: 61.3rem;
-}
+	.profile-content,
+	.profile-info {
+		width: 100%;
+	}
+	.profile-content {
+		padding-bottom: 6rem;
+	}
+	.profile-content > h3 {
+		font-size: 3.4rem;
+	}
+	.profile-content > p {
+		font-size: 2.2rem;
+	}
 
-.profile-content,.profile-info {
-	width: 100%;
-}
-.profile-content{
-    padding-bottom: 6rem;
-}
-.profile-content > h3 {
-	font-size: 3.4rem;
-}
-.profile-content > p {
-	font-size: 2.2rem;
-}
+	.profile-showecase-design {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1.4rem;
+	}
+	.profile-design {
+		width: 100%;
+		height: 36.8rem;
+	}
 
-.profile-showecase-design {
-	display: flex;
-	justify-content: center;
-    flex-wrap: wrap;
-	gap: 1.4rem;
-}
-.profile-design {
-	width: 100%;
-	height: 36.8rem;
-}
+	.cta-content > h3 {
+		font-size: 4rem;
+		white-space: wrap;
+	}
 
-.cta-content > h3 {
-	font-size: 4rem;
-    white-space: wrap;
-}
-
-.cta-content > p {
-	font-size: 2rem;
-	
-}
-.cta-content {
-	width: 26rem;
-}
-.cta-section{
-    height:60vh;
-}
-.footer-links > li {
-	font-size: 1.4rem;
-}
+	.cta-content > p {
+		font-size: 2rem;
+	}
+	.cta-content {
+		width: 26rem;
+	}
+	.cta-section {
+		height: 60vh;
+	}
+	.footer-links > li {
+		font-size: 1.4rem;
+	}
 }
