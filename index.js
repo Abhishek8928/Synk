@@ -55,7 +55,7 @@ function animateText(selector) {
     const paragraphs = document.querySelectorAll(`${selector} .select`);
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: selector,
+            trigger: `${selector} > .select `,
             start: "top 60%",
             end: "bottom 40%",
             scrub: true,
