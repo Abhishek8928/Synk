@@ -55,22 +55,13 @@ header{
 	font-size: 2rem;
 	width:17.5rem;
 	height:5.9rem;
+	color: rgba(55, 55, 55, 1);
 }
-.nav-btn-action > button:first-child {
-	background-color: rgba(26, 26, 26, 0.4);
-	border: 0.1rem solid rgba(45, 45, 45, 1);
-	gap: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: rgba(255, 255, 255, 1);
+.small-screen-text{
+	display: none;
 }
 
-.nav-btn-action > button:last-child {
-	border: none;
-	box-shadow: 0px 16px 180px 0px rgba(255, 255, 255, 0.16);
-	background-color: rgba(255, 255, 255, 1);
-}
+
 
 .hero-container {
 	width: 100%;
@@ -131,6 +122,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	box-shadow: 0 0 50px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
 		0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
 		margin-top: 4rem;
+		color:rgba(72, 72, 72, 1);
 }
 .scroll-text-effect {
 	padding-bottom: 4rem;
@@ -193,12 +185,12 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 }
 
 .insights {
-	width: 100%;
+	width: 70%;
 	margin: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10rem;
+	gap: 9.7rem;
 	padding: 4rem 0;
 }
 .insights-content {
@@ -214,6 +206,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
 	padding: 2rem 0;
+	width:80%;
 	
 }
 /* .insights-content > button {
@@ -231,7 +224,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	height: 61.3rem;
 }
 .profile-info {
-	width: 100%;
+	width: 70%;
 	margin: auto;
 	padding: 4rem 0;
 }
@@ -347,7 +340,9 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	font-weight: 400;
 }
 @media (max-width: 1260px) {
-	
+	.profile-info,.insights{
+		width:90%;
+	}
 	.main-container,header{
 		padding:0 6rem;
 	}
@@ -363,7 +358,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	}
 	.hero-desc {
 		font-size: 2rem;
-		width:100%;
+		
 	}
 
 	.insights {
@@ -376,9 +371,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	.insights-content > h2 {
 		font-size: 3.4rem;
 	}
-	.insights-content > p {
-		font-size: 2rem;
-	}
+	
 }
 @media (max-width:886px) {
 	html{
@@ -391,7 +384,9 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		flex-wrap: wrap;
 		gap:6rem;
 	}
-
+.hero-desc{
+	width:100%;
+}
 	.hero-container > .left-container,
 	.right-container {
 		width: 100%;
@@ -405,7 +400,10 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	.right-container > video {
 		width:100%;
 	}
-	
+	    .insights-content > p {
+        font-size: 2rem;
+		width:90%;
+    }
 	.features-wrapper {
 		flex-wrap: wrap;
         gap:1rem;
@@ -420,16 +418,16 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		font-size: 8px;
 	}
 	.hero-desc{
-		
+		display: none;
 		font-size: 2rem;
 	}
 	.main-container,header {
 		padding: 0 4rem;
 	}
-	.nav-btn-action > button:first-child {
-		display: none;
-	}
-	.nav-btn-action > button:last-child,.insights-content> button {
+	.insights-content > p {
+		width:100%;
+    }
+	.nav-btn-action > button,.insights-content> button {
 		width:126px;
 		height:49px;
 		border-radius: 20px;
@@ -437,6 +435,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		white-space: nowrap;
 		text-align: center;
 		padding:0;
+		color:rgba(55, 55, 55, 1);
 		
 	}
 	.hero-container {
@@ -515,7 +514,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		min-width:70%;
 	}
 	.insights-content > p {
-		font-size: 2.2rem;
+		font-size: 20px;
 		padding-bottom: 4rem;
 	}
 
@@ -539,7 +538,8 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		font-size: 3rem;
 	}
 	.profile-content > p {
-		font-size: 2rem;
+		width:100%;
+		font-size: 20px;
 	}
 
 	.profile-showecase-design {
@@ -572,5 +572,12 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	}
 	.footer-links > li {
 		font-size: 1.4rem;
+	}
+	.small-screen-text{
+		display: block;
+		font-size: 20px;
+		color:rgba(123, 123, 123, 1);
+		font-weight: 400;
+		
 	}
 }
