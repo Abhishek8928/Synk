@@ -188,12 +188,13 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	width: 70%;
 	margin: auto;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	gap: 9.7rem;
 	padding: 4rem 0;
 }
 .insights-content {
-	width: 50%;
+	width: 60%;
 }
 .insights-heading > h2 {
 	font-size: 4.2rem;
@@ -239,7 +240,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	color: rgba(255, 255, 255, 1);
 }
 .profile-text {
-	padding: 1.4rem 0;
+	padding: 2rem 0;
 }
 .profile-text > p {
 	font-size: 2.4rem;
@@ -253,8 +254,8 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 }
 .profile-design {
 	background-color: rgba(16, 16, 16, 1);
-	width: 36rem;
-	height: 40.8rem;
+	width: 50%;
+	padding-top: 8rem;
 	border: 1px solid rgba(27, 27, 27, 1);
 	border-radius: 2rem;
 	text-align: center;
