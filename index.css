@@ -188,25 +188,27 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	width: 70%;
 	margin: auto;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	gap: 9.7rem;
 	padding: 4rem 0;
 }
 .insights-content {
-	width: 47.9rem;
+	width: 50%;
 }
-
-.insights-content > h2 {
+.insights-heading > h2 {
 	font-size: 4.2rem;
 	font-weight: 400;
 	color: #fff;
 }
-.insights-content > p {
+
+.insights-text{
+	padding: 2rem 0;
+}
+.insights-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
-	padding: 2rem 0;
-	width:80%;
+	
+	
 	
 }
 /* .insights-content > button {
@@ -236,11 +238,12 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 1);
 }
-.profile-content > p {
+.profile-text {
+	padding: 1.4rem 0;
+}
+.profile-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
-	padding: 1.4rem 0;
-	width:78%;
 }
 
 .profile-showecase-design {
@@ -341,7 +344,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 }
 @media (max-width: 1260px) {
 	.profile-info,.insights{
-		width:90%;
+		width:100%;
 	}
 	.main-container,header{
 		padding:0 6rem;
@@ -361,16 +364,8 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		
 	}
 
-	.insights {
-		width: 80%;
-	}
-	.profile-info {
-		width: 80%;
-	}
 	
-	.insights-content > h2 {
-		font-size: 3.4rem;
-	}
+	
 	
 }
 @media (max-width:886px) {
@@ -400,10 +395,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	.right-container > video {
 		width:100%;
 	}
-	    .insights-content > p {
-        font-size: 2rem;
-		width:90%;
-    }
+	   
 	.features-wrapper {
 		flex-wrap: wrap;
         gap:1rem;
@@ -509,14 +501,13 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	.insights-content {
 		width: 100%;
 	}
-	.insights-content > h2 {
-		font-size: 3.4rem;
-		min-width:70%;
-	}
+	
 	.insights-content > p {
-		font-size: 20px;
+		font-size: 18px;
 		padding-bottom: 4rem;
 	}
+	
+	
 
 	.insights-video {
 		width: 100%;
@@ -578,6 +569,14 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		font-size: 20px;
 		color:rgba(123, 123, 123, 1);
 		font-weight: 400;
+		
+	}
+	.insights-text {
+		font-size: 20px !important;
+	}
+	.insights-heading > h2{
+		font-size: 32px !important;
+		
 		
 	}
 }
