@@ -142,7 +142,7 @@ header {
 }
 .text-larger  {
 	font-size: 4rem !important;
-	color: #fff;
+	color: #fff !important;
 }
 
 .features-wrapper {
@@ -403,7 +403,10 @@ header {
 	}
 	.main-container,
 	header {
-		padding: 0 2.8rem;
+		padding: 0 1.8rem;
+	}
+	.text-larger{
+		font-size: 32px !important;
 	}
 	.insights-content > p {
 		width: 100%;
@@ -494,10 +497,7 @@ header {
 		width: 100%;
 	}
 
-	.insights-content > p {
-		font-size: 18px;
-		padding-bottom: 4rem;
-	}
+	
 
 	.insights-video {
 		width: 100%;
@@ -561,6 +561,7 @@ header {
 	}
 	.insights-text {
 		font-size: 20px !important;
+		
 	}
 	.insights-heading > h2 {
 		font-size: 32px !important;

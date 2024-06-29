@@ -19,9 +19,10 @@ const tl = gsap.timeline({
         ease: "power3.out" 
     },
     scrollTrigger: {
-        trigger: ".insights-content",
+        trigger: ".first-insights",
         start: "top 80%",
-        end: "bottom 20%",
+        end: "bottom 40%",
+        
         scrub: 1 
     }
 });
