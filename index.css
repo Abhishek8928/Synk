@@ -20,7 +20,6 @@ html {
 
 .main-container {
 	width: 100%;
-	/* min-height:100vh; */
 	background-color: rgb(13, 13, 13);
 	padding: 0 12rem;
 }
@@ -145,7 +144,7 @@ box-shadow: 0px 0px 90.35px 0px rgba(255, 255, 255, 1);
 	color: rgba(118, 118, 118, 1);
 	width: 100%;
 }
-.scroll-text-effect p {
+.scroll-text-effect > p {
 	font-weight: 400;
 	font-size: 3.2rem;
 	padding-bottom: 2.6rem;
@@ -153,7 +152,7 @@ box-shadow: 0px 0px 90.35px 0px rgba(255, 255, 255, 1);
 	margin: auto;
 	
 }
-.text-larger {
+.text-larger > span {
 	font-size: 4rem !important;
 }
 .scroll-text-effect > p > span {
@@ -422,9 +421,7 @@ box-shadow: 0px 0px 90.35px 0px rgba(255, 255, 255, 1);
 	
 }
 @media (max-width: 550px) {
-	html {
-		font-size: 8px;
-	}
+	
 	.hero-desc{
 		display: none;
 		font-size: 2rem;
@@ -492,12 +489,12 @@ position: relative;
 			0 0 60px rgb(255, 255, 255), 0 0 120px rgb(255, 255, 255);
 	}
 	.scroll-text-effect p {
-		font-size: 2.4rem;
+		font-size: 24px;
 
 		width: 100%;
 	}
-    .text-larger{
-        font-size: 3.2rem !important;
+    .text-larger > span {
+        font-size: 32px !important;
     }
 	.features-wrapper {
 		flex-wrap: wrap;
@@ -567,18 +564,19 @@ position: relative;
 	}
 
 	.cta-content > h3 {
-		font-size: 4rem;
+		font-size: 48px;
 		white-space: wrap;
 	}
 
 	.cta-content > p {
-		font-size: 2rem;
+		font-size: 20px;
 	}
 	.cta-content {
-		width: 26rem;
+		width: 241px;
 	}
 	.cta-section {
-		height: 60vh;
+		height: 423px;
+		
 	}
 	.footer-links > li {
 		font-size: 1.4rem;
