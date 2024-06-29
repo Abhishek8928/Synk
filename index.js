@@ -7,3 +7,11 @@
           navbar.style.backgroundColor = 'rgb(10, 10, 11)'; 
       }
     });
+    
+    
+
+gsap.to(".animated-background",{
+    duration:2,
+    display:"none",
+    
+})
