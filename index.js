@@ -10,8 +10,44 @@
     
     
 
-gsap.to(".animated-background",{
-    duration:2,
-    display:"none",
-    
-})
+
+const tl = gsap.timeline({
+    defaults: {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power3.out" 
+    },
+    scrollTrigger: {
+        trigger: ".insights-content",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: 1 
+    }
+});
+
+
+tl.from(".insights-heading-first > h2", {});
+tl.from(".insights-text-first > p", { stagger: 0.2 }, "-=0.6"); 
+tl.from(".insights-content-first > button", {}, "-=0.6");
+
+
+const tlNewContainer = gsap.timeline({
+    defaults: {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power3.out"
+    },
+    scrollTrigger: {
+        trigger: ".second-insights",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: 1
+    }
+});
+
+// Animations for the new container
+tlNewContainer.from(".new-heading > h2", {});
+tlNewContainer.from(".new-text > p", { stagger: 0.2 }, "-=0.6");
+tlNewContainer.from(".new-content > button", {}, "-=0.6");
