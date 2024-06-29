@@ -231,7 +231,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 	padding: 4rem 0;
 }
 .profile-content {
-	width: 52.9rem;
+	width:60.9rem;
 }
 .profile-content > h3 {
 	font-size: 4.8rem;
@@ -414,7 +414,7 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		font-size: 2rem;
 	}
 	.main-container,header {
-		padding: 0 4rem;
+		padding: 0 2.8rem;
 	}
 	.insights-content > p {
 		width:100%;
@@ -526,7 +526,8 @@ box-shadow: 0px 1.11px 4.44px 1.11px rgba(255, 255, 255, 0.08) inset;
 		padding-bottom: 6rem;
 	}
 	.profile-content > h3 {
-		font-size: 3rem;
+		font-size: 32px;
+		
 	}
 	.profile-content > p {
 		width:100%;
