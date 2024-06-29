@@ -59,7 +59,7 @@ function animateText(selector) {
             start: "top 60%",
             end: "bottom 40%",
             scrub: true,
-            markers: true
+
         }
     });
 
