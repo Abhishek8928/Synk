@@ -61,6 +61,7 @@ header {
 .hero-container {
 	width: 100%;
 	display: flex;
+	height: 180vh;
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 18rem 0 8rem 0;
@@ -80,6 +81,7 @@ header {
 }
 .right-container > video {
 	width: 100%;
+	
 }
 .tag-line {
 	border-radius: 2.4rem;
@@ -128,6 +130,7 @@ header {
 	margin-top: 4rem;
 	color: rgba(72, 72, 72, 1);
 }
+
 .scroll-text-effect {
 	padding-bottom: 4rem;
 	width: 100%;
@@ -373,6 +376,9 @@ header {
 	}
 	.hero-desc {
 		width: 100%;
+	}
+	.left-container {
+		text-align: center;
 	}
 	.hero-container > .left-container,
 	.right-container {
