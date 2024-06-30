@@ -38,70 +38,114 @@ const tlNewContainer = gsap.timeline({
 		start: "top 80%",
 		end: "bottom 60%",
 		scrub: 1,
-        
 	},
 });
-
 
 tlNewContainer.from(".new-heading > h2", {});
 tlNewContainer.from(".new-text > p", { stagger: 0.2 }, "-=0.6");
 tlNewContainer.from(".new-content > button", {}, "-=0.6");
 
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 function animateText(selector) {
-    const paragraphs = document.querySelectorAll(`${selector} .select`);
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: `${selector}  > .select `,
-            start: "top 80%",
-            end: "bottom 60%",
-            scrub: true,
-            
-            
-            
-        }
-    });
+	const paragraphs = document.querySelectorAll(`${selector} .select`);
+	const tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: `${selector}  > .select `,
+			start: "top 80%",
+			end: "bottom 60%",
+			scrub: true,
+		},
+	});
 
-    paragraphs.forEach(p => {
-        const words = p.innerText.split(' ');
-        p.innerHTML = words.map(word => `<span style="display: inline-block; opacity: 0">${word} </span>`).join(' ');
-        tl.to(p.querySelectorAll('span'), {
-            opacity: 1,
-            color: 'white',
-            stagger: 0.1,
-            duration: 1,
-            ease: "power1.inOut"
-        }, '+=0.5');
-    });
+	paragraphs.forEach((p) => {
+		const words = p.innerText.split(" ");
+		p.innerHTML = words
+			.map(
+				(word) =>
+					`<span style="display: inline-block; opacity: 0">${word} </span>`
+			)
+			.join(" ");
+		tl.to(
+			p.querySelectorAll("span"),
+			{
+				opacity: 1,
+				color: "white",
+				stagger: 0.1,
+				duration: 1,
+				ease: "power1.inOut",
+			},
+			"+=0.5"
+		);
+	});
 }
 
-animateText('.story-text-one');
-animateText('.story-text-two');
-
-
-
+animateText(".story-text-one");
+animateText(".story-text-two");
 
 const d = gsap.timeline();
 
 // Animation for elements inside left container
 d.from(".left-container > *", {
+	opacity: 0,
+	y: 50,
+	stagger: 0.3, // Stagger animation for each element
+	duration: 1,
+	ease: "power1.out",
+});
+
+// Animation for scaling up the video in right container
+d.from(
+	".right-container video",
+	{
+		opacity: 0,
+		duration: 1,
+		ease: "power1.out",
+	},
+	"-=0.5"
+); // Start this animation 0.5 seconds before the previous animation ends
+
+// Play the timeline
+d.play();
+
+
+
+// Select the profile-info container
+const profileInfo = document.querySelector(".profile-info");
+
+// Create a GSAP timeline for the animation
+const profileInfoTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: profileInfo,
+        start: "top 80%", // Adjust start position as needed
+        end: "bottom 20%", // Adjust end position as needed
+        scrub: true,
+        
+    }
+});
+
+// Animation for profile content (text)
+profileInfoTimeline.from(".profile-content > *", {
     opacity: 0,
     y: 50,
-    stagger: 0.3, // Stagger animation for each element
+    stagger: 0.3, // Stagger animation for each child element
     duration: 1,
     ease: "power1.out"
 });
 
-// Animation for scaling up the video in right container
-d.from(".right-container video", {
-    opacity: 0,
-    duration: 1,
-    ease: "power1.out"
-}, "-=0.5"); // Start this animation 0.5 seconds before the previous animation ends
+// Animation for profile showcase designs (images)
+const profileDesigns = document.querySelectorAll(".profile-design");
+profileDesigns.forEach((design, index) => {
+    profileInfoTimeline.from(design, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power1.out"
+    }, "-=0.5"); // Offset to start after content animation
+});
 
 // Play the timeline
-d.play();
+profileInfoTimeline.play();
+
+
+
