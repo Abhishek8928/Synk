@@ -110,42 +110,27 @@ d.play();
 
 
 
-// Select the profile-info container
-const profileInfo = document.querySelector(".profile-info");
+const profileContent = document.querySelector(".profile-content");
 
 // Create a GSAP timeline for the animation
-const profileInfoTimeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: profileInfo,
-        start: "top 80%", // Adjust start position as needed
-        end: "bottom 20%", // Adjust end position as needed
-        scrub: true,
-        
-    }
-});
-
-// Animation for profile content (text)
-profileInfoTimeline.from(".profile-content > *", {
-    opacity: 0,
-    y: 50,
-    stagger: 0.3, // Stagger animation for each child element
-    duration: 1,
-    ease: "power1.out"
-});
-
-// Animation for profile showcase designs (images)
-const profileDesigns = document.querySelectorAll(".profile-design");
-profileDesigns.forEach((design, index) => {
-    profileInfoTimeline.from(design, {
+const profileContentTimeline = gsap.timeline({
+    defaults: {
         opacity: 0,
         y: 50,
         duration: 1,
-        ease: "power1.out"
-    }, "-=0.5"); // Offset to start after content animation
+        ease: "power3.out",
+    },
+    scrollTrigger: {
+        trigger: profileContent,
+        start: "top 80%", // Adjust start position as needed
+        end: "bottom 60%", // Adjust end position as needed
+        scrub: 1,
+    },
 });
 
-// Play the timeline
-profileInfoTimeline.play();
+// Animation for profile content (h3 and p tags)
+profileContentTimeline.from(".profile-content > h3", {});
+profileContentTimeline.from(".profile-content .profile-text > p", { stagger: 0.2 }, "-=0.6");
 
 
 
