@@ -96,7 +96,6 @@ d.from(".left-container > *", {
 // Animation for scaling up the video in right container
 d.from(".right-container video", {
     opacity: 0,
-    scale: 1.2,
     duration: 1,
     ease: "power1.out"
 }, "-=0.5"); // Start this animation 0.5 seconds before the previous animation ends
