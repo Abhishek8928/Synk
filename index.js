@@ -38,6 +38,7 @@ const tlNewContainer = gsap.timeline({
 		start: "top 80%",
 		end: "bottom 60%",
 		scrub: 1,
+        
 	},
 });
 
@@ -56,9 +57,10 @@ function animateText(selector) {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: `${selector}  > .select `,
-            start: "top 60%",
+            start: "top 40%",
             end: "bottom 20%",
             scrub: true,
+            
             
         }
     });
