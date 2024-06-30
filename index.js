@@ -55,11 +55,11 @@ function animateText(selector) {
     const paragraphs = document.querySelectorAll(`${selector} .select`);
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: `${selector} > .select `,
+            trigger: `${selector}  > .select `,
             start: "top 60%",
-            end: "bottom 40%",
+            end: "bottom 20%",
             scrub: true,
-
+            
         }
     });
 
@@ -78,3 +78,28 @@ function animateText(selector) {
 
 animateText('.story-text-one');
 animateText('.story-text-two');
+
+
+
+
+const d = gsap.timeline();
+
+// Animation for elements inside left container
+d.from(".left-container > *", {
+    opacity: 0,
+    y: 50,
+    stagger: 0.3, // Stagger animation for each element
+    duration: 1,
+    ease: "power1.out"
+});
+
+// Animation for scaling up the video in right container
+d.from(".right-container video", {
+    opacity: 0,
+    scale: 1.2,
+    duration: 1,
+    ease: "power1.out"
+}, "-=0.5"); // Start this animation 0.5 seconds before the previous animation ends
+
+// Play the timeline
+d.play();
