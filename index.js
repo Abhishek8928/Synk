@@ -85,16 +85,14 @@ animateText(".story-text-two");
 
 const d = gsap.timeline();
 
-// Animation for elements inside left container
 d.from(".left-container > *", {
 	opacity: 0,
 	y: 50,
-	stagger: 0.3, // Stagger animation for each element
+	stagger: 0.3,
 	duration: 1,
 	ease: "power1.out",
 });
 
-// Animation for scaling up the video in right container
 d.from(
 	".right-container video",
 	{
@@ -103,34 +101,31 @@ d.from(
 		ease: "power1.out",
 	},
 	"-=0.5"
-); // Start this animation 0.5 seconds before the previous animation ends
+);
 
-// Play the timeline
 d.play();
-
-
 
 const profileContent = document.querySelector(".profile-content");
 
 // Create a GSAP timeline for the animation
 const profileContentTimeline = gsap.timeline({
-    defaults: {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power3.out",
-    },
-    scrollTrigger: {
-        trigger: profileContent,
-        start: "top 80%", // Adjust start position as needed
-        end: "bottom 60%", // Adjust end position as needed
-        scrub: 1,
-    },
+	defaults: {
+		opacity: 0,
+		y: 50,
+		duration: 1,
+		ease: "power3.out",
+	},
+	scrollTrigger: {
+		trigger: profileContent,
+		start: "top 80%",
+		end: "bottom 60%",
+		scrub: 1,
+	},
 });
 
-// Animation for profile content (h3 and p tags)
 profileContentTimeline.from(".profile-content > h3", {});
-profileContentTimeline.from(".profile-content .profile-text > p", { stagger: 0.2 }, "-=0.6");
-
-
-
+profileContentTimeline.from(
+	".profile-content .profile-text > p",
+	{ stagger: 0.2 },
+	"-=0.6"
+);
