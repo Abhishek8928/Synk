@@ -57,9 +57,10 @@ function animateText(selector) {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: `${selector}  > .select `,
-            start: "top 40%",
-            end: "bottom 20%",
+            start: "top 80%",
+            end: "bottom 60%",
             scrub: true,
+            
             
             
         }
