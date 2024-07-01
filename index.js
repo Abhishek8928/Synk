@@ -51,7 +51,7 @@ function animateLetters(selector) {
 	const paragraphs = document.querySelectorAll(`${selector} .select`);
 	const tl = gsap.timeline({
 		scrollTrigger: {
-			trigger: selector,
+			trigger: `${ selector } .select`,
 			start: "top 80%",
 			end: "bottom 60%",
 			scrub: true,
@@ -63,8 +63,8 @@ function animateLetters(selector) {
 			p.querySelectorAll("span"),
 			{
 				color: "white",
-				stagger: 0.05, // Adjust the stagger for timing between each letter
-				duration: 0.5, // Adjust the duration for the color change animation
+				stagger: 20, // Increase stagger for more time between each letter
+				duration: 8, // Increase duration for slower color change animation
 				ease: "power1.inOut",
 			},
 			"+=0.5"
@@ -122,3 +122,24 @@ profileContentTimeline.from(
 	{ stagger: 0.2 },
 	"-=0.6"
 );
+
+
+const tlCTAContent = gsap.timeline({
+	defaults: {
+		opacity: 0,
+		y: 50, // Initial Y-axis position for animation
+		duration: 1,
+		ease: "power3.out",
+	},
+	scrollTrigger: {
+		trigger: ".cta-content",
+		start: "top 80%",
+		end: "bottom 60%",
+		scrub: 1,
+	},
+});
+
+tlCTAContent.from(".cta-branding-logo", {});
+tlCTAContent.from(".cta-content > h3", {}, "-=0.6");
+tlCTAContent.from(".cta-content > p", { stagger: 0.2 }, "-=0.6");
+tlCTAContent.from(".action-button-wrapper", { stagger: 0.2 }, "-=0.6");
