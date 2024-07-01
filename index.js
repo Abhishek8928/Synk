@@ -47,11 +47,11 @@ tlNewContainer.from(".new-content > button", {}, "-=0.6");
 
 gsap.registerPlugin(ScrollTrigger);
 
-function animateText(selector) {
+function animateLetters(selector) {
 	const paragraphs = document.querySelectorAll(`${selector} .select`);
 	const tl = gsap.timeline({
 		scrollTrigger: {
-			trigger: `${selector}  > .select `,
+			trigger: selector,
 			start: "top 80%",
 			end: "bottom 60%",
 			scrub: true,
@@ -59,20 +59,12 @@ function animateText(selector) {
 	});
 
 	paragraphs.forEach((p) => {
-		const words = p.innerText.split(" ");
-		p.innerHTML = words
-			.map(
-				(word) =>
-					`<span style="display: inline-block; opacity: 0">${word} </span>`
-			)
-			.join(" ");
 		tl.to(
 			p.querySelectorAll("span"),
 			{
-				opacity: 1,
 				color: "white",
-				stagger: 0.1,
-				duration: 1,
+				stagger: 0.05, // Adjust the stagger for timing between each letter
+				duration: 0.5, // Adjust the duration for the color change animation
 				ease: "power1.inOut",
 			},
 			"+=0.5"
@@ -80,8 +72,9 @@ function animateText(selector) {
 	});
 }
 
-animateText(".story-text-one");
-animateText(".story-text-two");
+// Call the function for your specific section
+animateLetters(".story-text-one");
+animateLetters(".story-text-two");
 
 const d = gsap.timeline();
 

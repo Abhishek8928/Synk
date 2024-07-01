@@ -46,18 +46,30 @@ header {
 }
 .nav-btn-action > button,
 .insights-content > button,
-.cta-content > button {
+.action-button-wrapper > button {
 	border: none;
 	border-radius: 2.7rem;
 	font-size: 2rem;
-	width: 17.5rem;
+	width: 17.4rem;
 	height: 5.9rem;
 	color: rgba(55, 55, 55, 1);
 }
 .small-screen-text {
 	display: none;
 }
-
+.action-button-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:1.5rem;
+}
+.action-button-wrapper > button:last-child{
+	width:147px;
+	height:58px;
+	border:1px solid rgba(66, 66, 66, 1);
+	background-color: rgb(13,13,13);
+	color:#fff;
+}
 .hero-container {
 	width: 100%;
 	display: flex;
@@ -275,27 +287,20 @@ header {
 
 .cta-section {
 	width: 100%;
-	background-color: red;
 	height: 80vh;
 	border-radius: 2.6rem;
 	overflow: hidden;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.cta-section > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+
 
 .cta-content {
-	position: absolute;
 	width: 70.5rem;
 	top: 0;
 	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .cta-content > h3 {
@@ -303,19 +308,21 @@ header {
 	font-weight: 400;
 	white-space: nowrap;
 	color: #fff;
+	padding-bottom: 3rem;
 }
 
 .cta-content > p {
 	font-size: 2.4rem;
-	color: rgba(255, 255, 255, 1);
-	margin-bottom: 2rem;
+	color: rgba(138, 138, 138, 1);
+	margin-bottom: 4rem;
 }
 
 .footer-links {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 2rem 0;
 	list-style-type: none;
+	gap:3rem;
 }
 .footer-links > li {
 	font-size: 2rem;
