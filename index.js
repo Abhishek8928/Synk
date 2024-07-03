@@ -53,7 +53,7 @@ function animateLetters(selector) {
 		scrollTrigger: {
 			trigger: `${ selector } .select`,
 			start: "top 80%",
-			end: "bottom 60%",
+			end: "bottom 40%",
 			scrub: true,
 		},
 	});
@@ -67,7 +67,7 @@ function animateLetters(selector) {
 				duration: 8, // Increase duration for slower color change animation
 				ease: "power1.inOut",
 			},
-			"+=0.5"
+			"+=1"
 		);
 	});
 }
