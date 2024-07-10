@@ -18,6 +18,7 @@ html {
 	width: 100%;
 	background-color: rgb(13, 13, 13);
 	padding: 0 12rem;
+	
 }
 header {
 	width: 100%;
@@ -31,7 +32,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.4rem 0;
+	padding: 1.6rem 0;
 }
 .synk-logo {
 	font-size: 3.2rem;
@@ -558,12 +559,15 @@ footer > p{
 		font-size: 48px;
 		white-space: wrap;
 	}
-
+    .action-button-wrapper > button:last-child
 	.cta-content > p {
 		font-size: 20px;
 	}
 	.cta-content {
 		width:100%;
+	}
+	.extra-btn{
+		height:5.9rem !important;
 	}
 	.cta-section {
 		

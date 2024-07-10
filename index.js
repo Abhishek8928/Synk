@@ -1,7 +1,9 @@
+
+
 window.addEventListener("scroll", function () {
 	const navbar = document.querySelector("header");
 	if (window.scrollY > 0) {
-		navbar.style.backgroundColor = "rgba(13, 13, 13, 0.32)";
+		navbar.style.backgroundColor = "rgba(12, 12, 12, 0.32)";
 	} else {
 		navbar.style.backgroundColor = "rgb(13, 13, 13)";
 	}
