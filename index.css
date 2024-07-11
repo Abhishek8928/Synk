@@ -223,7 +223,7 @@ header {
 
 .insights-text {
 	padding: 2rem 0;
-	font-family: 'helvetic' !important;
+	font-family: "Manrope", sans-serif;
 }
 .insights-text > p {
 	font-size: 2.4rem;
