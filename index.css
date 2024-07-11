@@ -52,7 +52,7 @@ header {
 }
 .nav-btn-action > button,
 .insights-content > button,
-.action-button-wrapper > button {
+.action-button-wrapper > button,.left-container > button {
 	border: none;
 	border-radius: 2.7rem;
 	font-size: 2rem;
@@ -127,11 +127,7 @@ header {
 }
 
 .left-container > button {
-	width: 17.4rem;
-	height: 5.9rem;
-	border: none;
-	border-radius: 2.7rem;
-	font-size:2rem;
+	
 	
 	box-shadow: 0px 0px 2.15px 0px rgba(255, 255, 255, 1);
 
@@ -147,7 +143,6 @@ header {
 
 	margin-top: 4rem;
 	color: rgba(72, 72, 72, 1);
-	font-family: helvetic !important;
 }
 
 .scroll-text-effect {
@@ -436,19 +431,20 @@ footer > p{
 	}
 	.main-container,
 	header {
-		padding: 0 1.4rem;
+		padding: 0 2rem;
 	}
 	.text-larger {
 		font-size: 32px !important;
 	}
 	.insights-content > p {
 		width: 100%;
+		
 	}
 	.nav-btn-action > button,
-	.insights-content > button {
-		width: 126px;
+	.insights-content > button,.left-container > button {
+		width: 136px;
 		height: 49px;
-		border-radius: 20px;
+		border-radius: 26px;
 		font-size: 14px;
 		white-space: nowrap;
 		text-align: center;
@@ -472,13 +468,7 @@ footer > p{
 		position: relative;
 		z-index: 20;
 	}
-	.left-container > button {
-		width: 202px;
-		height: 57px;
-		border-radius: 25px;
-		font-size: 16px;
-		color: rgba(72, 72, 72, 1);
-	}
+	
 
 	.hero-container > .right-container {
 		width: 100%;
@@ -593,8 +583,8 @@ footer > p{
 		color: rgba(123, 123, 123, 1);
 		font-weight: 400;
 	}
-	.insights-text {
-		font-size: 20px !important;
+	.insights-text > p,.profile-text > p {
+		font-size: 19px !important;
 	}
 	.insights-heading > h2 {
 		font-size: 32px !important;
