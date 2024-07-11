@@ -144,4 +144,4 @@ const tlCTAContent = gsap.timeline({
 tlCTAContent.from(".cta-branding-logo", {});
 tlCTAContent.from(".cta-content > h3", {}, "-=0.6");
 tlCTAContent.from(".cta-content > p", { stagger: 0.2 }, "-=0.6");
-tlCTAContent.from(".nav-btn-action", { stagger: 0.2 }, "-=0.6");
+tlCTAContent.from(".nav-btn-action.cta-button", { stagger: 0.2 }, "-=0.6");
