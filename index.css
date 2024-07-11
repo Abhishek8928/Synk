@@ -3,6 +3,11 @@
 	src: url(./font/NeueMontreal-Regular.woff);
 }
 
+@font-face {
+	font-family: helvetic;
+	src: url(./font/helveticaneueltpro-roman.woff2);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -54,22 +59,23 @@ header {
 	width: 17.4rem;
 	height: 5.9rem;
 	color: rgba(55, 55, 55, 1);
+	font-family: helvetic !important;
 }
 .small-screen-text {
 	display: none;
 }
 .action-button-wrapper {
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1.5rem;
 }
 .action-button-wrapper > button:last-child {
-	width: 147px;
-	height: 58px;
+	color:#fff;
+	font-weight: 400;
 	border: 1px solid rgba(66, 66, 66, 1);
 	background-color: rgb(13, 13, 13);
-	color: #fff;
 }
 .hero-container {
 	width: 100%;
@@ -117,15 +123,16 @@ header {
 	font-size: 2.4rem;
 	font-weight: 400;
 	color: rgba(123, 123, 123, 1);
+	font-family: helvetic !important;
 }
 
 .left-container > button {
-	width: 18rem;
-	height: 5.8rem;
+	width: 17.4rem;
+	height: 5.9rem;
 	border: none;
-	border-radius: 2.5rem;
-	font-size: 1.6rem;
-	padding: 1.2rem 2rem;
+	border-radius: 2.7rem;
+	font-size:2rem;
+	
 	box-shadow: 0px 0px 2.15px 0px rgba(255, 255, 255, 1);
 
 	box-shadow: 0px 0px 4.3px 0px rgba(255, 255, 255, 1);
@@ -140,6 +147,7 @@ header {
 
 	margin-top: 4rem;
 	color: rgba(72, 72, 72, 1);
+	font-family: helvetic !important;
 }
 
 .scroll-text-effect {
@@ -188,6 +196,7 @@ header {
 	font-size: 2rem;
 	color: rgba(134, 134, 134, 1);
 	padding: 1rem 0;
+	font-family: helvetic !important;
 }
 .feature-img {
 	text-align: center;
@@ -223,6 +232,7 @@ header {
 .insights-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
+	font-family: helvetic !important;
 }
 
 .insights-video {
@@ -252,6 +262,7 @@ header {
 .profile-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
+	font-family: helvetic !important;
 }
 
 .profile-showecase-design {
@@ -311,7 +322,7 @@ header {
 .cta-content > p {
 	font-size: 2.4rem;
 	color: rgba(138, 138, 138, 1);
-	margin-bottom: 4rem;
+	margin-bottom: 4rem;font-family: helvetic !important;
 }
 
 .footer-links {
@@ -559,16 +570,14 @@ footer > p{
 		font-size: 48px;
 		white-space: wrap;
 	}
-    .action-button-wrapper > button:last-child
+    
 	.cta-content > p {
 		font-size: 20px;
 	}
 	.cta-content {
 		width:100%;
 	}
-	.extra-btn{
-		height:5.9rem !important;
-	}
+	
 	.cta-section {
 		
 		min-height: 423px;
