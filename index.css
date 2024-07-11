@@ -233,6 +233,7 @@ header {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
 	font-family: helvetic !important;
+	
 }
 
 .insights-video {
@@ -435,7 +436,7 @@ footer > p{
 	}
 	.main-container,
 	header {
-		padding: 0 2rem;
+		padding: 0 1.4rem;
 	}
 	.text-larger {
 		font-size: 32px !important;
@@ -527,6 +528,7 @@ footer > p{
 	}
 	.insights-content {
 		width: 100%;
+		white-space: nowrap;
 	}
 
 	.insights-video {
