@@ -1,11 +1,15 @@
 @font-face {
-	font-family: NeueMontreal;
-	src: url(./font/NeueMontreal-Regular.ttf);
+    font-family: 'NeueMontreal';
+    src: url('./font/NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: helvetic;
-	src: url(./font/helveticaneueltpro-roman.ttf);
+    font-family: 'Helvetic';
+    src: url('./font/helveticaneueltpro-roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -43,7 +47,7 @@ header {
 	font-weight: 400;
 	text-decoration: none;
 	color: #fff;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 .nav-btn-action {
 	display: flex;
@@ -59,7 +63,7 @@ header {
 	width: 17.4rem;
 	height: 5.9rem;
 	color: rgba(55, 55, 55, 1);
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 .small-screen-text {
 	display: none;
@@ -78,7 +82,7 @@ header {
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 18rem 0 8rem 0;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 
 .hero-container > .left-container {
@@ -97,6 +101,7 @@ header {
 	width: 100%;
 }
 .tag-line {
+	font-family: 'NeueMontreal';
 	border-radius: 2.4rem;
 	border: 1px solid rgba(55, 55, 55, 1);
 	color: rgba(202, 202, 202, 1);
@@ -119,7 +124,7 @@ header {
 	font-size: 2.4rem;
 	font-weight: 400;
 	color: rgba(123, 123, 123, 1);
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 
 .left-container > button {
@@ -145,7 +150,7 @@ header {
 .scroll-text-effect {
 	padding-bottom: 4rem;
 	width: 100%;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 .scroll-text-effect > p {
 	font-weight: 400;
@@ -185,13 +190,13 @@ header {
 	color: rgba(255, 255, 255, 1);
 	font-size: 2.4rem;
 	font-weight: 400;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 .card-description {
 	font-size: 2rem;
 	color: rgba(134, 134, 134, 1);
 	padding: 1rem 0;
-	font-family: helvetic !important;
+	font-family: 'helvetic !important';
 }
 .feature-img {
 	text-align: center;
@@ -219,12 +224,12 @@ header {
 	font-size: 4.2rem;
 	font-weight: 400;
 	color: #fff;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 
 .insights-text {
 	padding: 2rem 0;
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 .insights-text > p {
 	font-size: 2.4rem;
@@ -252,7 +257,7 @@ header {
 	font-size: 4.8rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 1);
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 .profile-text {
 	padding: 2rem 0;
@@ -261,7 +266,7 @@ header {
 .profile-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 
 .profile-showecase-design {
@@ -316,14 +321,14 @@ header {
 	white-space: nowrap;
 	color: #fff;
 	padding: 3rem 0;
-	font-family: NeueMontreal;
+	font-family: 'NeueMontreal';
 }
 
 .cta-content > p {
 	font-size: 2.4rem;
 	color: rgba(138, 138, 138, 1);
 	margin-bottom: 4rem;
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 
 .footer-links {
@@ -347,7 +352,7 @@ footer > p{
 	font-size: 1.6rem;
 	padding: 2.8rem 0;
 	text-align: center;
-	font-family: helvetic !important;
+	font-family: 'helvetic' !important;
 }
 
 .cta-branding-logo > img{
