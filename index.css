@@ -71,12 +71,7 @@ header {
 	justify-content: center;
 	gap: 1.5rem;
 }
-.action-button-wrapper > button:last-child {
-	color:#fff;
-	font-weight: 400;
-	border: 1px solid rgba(66, 66, 66, 1);
-	background-color: rgb(13, 13, 13);
-}
+
 .hero-container {
 	width: 100%;
 	display: flex;
@@ -360,6 +355,13 @@ footer > p{
 	box-shadow: 0px 0px 90.35px 0px rgba(255, 255, 255, 1);
 	border-radius: 15px;
 	
+}
+
+.nav-btn-action > .extra-btn:last-child {
+	color:#fff;
+	font-weight: 400;
+	border: 1px solid rgba(66, 66, 66, 1) ;
+	background-color: rgb(13, 13, 13) ;
 }
 @media (max-width: 1260px) {
 	.profile-info,
