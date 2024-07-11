@@ -1,11 +1,11 @@
 @font-face {
 	font-family: NeueMontreal;
-	src: url(./font/NeueMontreal-Regular.woff);
+	src: url(./font/NeueMontreal-Regular.ttf);
 }
 
 @font-face {
 	font-family: helvetic;
-	src: url(./font/helveticaneueltpro-roman.woff2);
+	src: url(./font/helveticaneueltpro-roman.ttf);
 }
 
 * {
