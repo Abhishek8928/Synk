@@ -40,7 +40,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.6rem 0;
+	padding: 1rem 0;
 }
 .synk-logo {
 	font-size: 3.2rem;
@@ -149,18 +149,19 @@ header {
 }
 
 .scroll-text-effect {
-	margin-bottom: 8rem;
+	margin-bottom: 4rem;
 	width: 100%;
 	font-family: 'NeueMontreal';
 }
 .scroll-text-effect > p {
 	font-weight: 400;
 	font-size: 3.2rem;
-	padding-bottom: 2.6rem;
+	padding-bottom: 4rem;
 	width: 51.3rem;
 	color: rgba(118, 118, 118, 1);
 	margin: auto;
 }
+
 
 
 .features-wrapper {

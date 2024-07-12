@@ -65,9 +65,9 @@ function animateLetters(selector) {
 			p.querySelectorAll("span"),
 			{
 				color: "white",
-				stagger: 20, // Increase stagger for more time between each letter
-				duration: "10s", // Increase duration for slower color change animation
-				ease: "power1.inOut",
+				stagger: 20, 
+				duration: "10s", 
+				ease: "power1.inOut"
 			},
 			"+=1"
 		);
