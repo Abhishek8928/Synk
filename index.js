@@ -54,7 +54,7 @@ function animateLetters(selector) {
 	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: `${ selector } .select`,
-			start: "top 80%",
+			start: "top 60%",
 			end: "bottom 40%",
 			scrub: true,
 		},
@@ -66,7 +66,7 @@ function animateLetters(selector) {
 			{
 				color: "white",
 				stagger: 20, // Increase stagger for more time between each letter
-				duration: 8, // Increase duration for slower color change animation
+				duration: "10s", // Increase duration for slower color change animation
 				ease: "power1.inOut",
 			},
 			"+=1"
