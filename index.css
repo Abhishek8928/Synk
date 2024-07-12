@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+.inter-font {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -56,7 +63,7 @@ header {
 	width: 17.4rem;
 	height: 5.9rem;
 	color: rgba(55, 55, 55, 1);
-	font-family: "Manrope", sans-serif;
+	
 	
 }
 .small-screen-text {
@@ -118,7 +125,7 @@ header {
 	font-size: 2.4rem;
 	font-weight: 400;
 	color: rgba(123, 123, 123, 1);
-	font-family: "Manrope", sans-serif;
+	
 }
 
 .left-container > button {
@@ -154,11 +161,7 @@ header {
 	color: rgba(118, 118, 118, 1);
 	margin: auto;
 }
-.text-larger {
-	font-size: 4rem !important;
-	color: #fff !important;
-	font-family: "Manrope", sans-serif;
-}
+
 
 .features-wrapper {
 	padding: 2rem 0;
@@ -190,7 +193,7 @@ header {
 	font-size: 2rem;
 	color: rgba(134, 134, 134, 1);
 	padding: 1rem 0;
-	font-family: "Manrope", sans-serif;
+	
 }
 .feature-img {
 	text-align: center;
@@ -223,7 +226,7 @@ header {
 
 .insights-text {
 	padding: 2rem 0;
-	font-family: "Manrope", sans-serif;
+	
 }
 .insights-text > p {
 	font-size: 2.4rem;
@@ -255,12 +258,12 @@ header {
 }
 .profile-text {
 	padding: 2rem 0;
-	font-family: "Manrope", sans-serif;
+	
 }
 .profile-text > p {
 	font-size: 2.4rem;
 	color: rgba(123, 123, 123, 1);
-	font-family: "Manrope", sans-serif;
+	
 }
 
 .profile-showecase-design {
@@ -322,7 +325,7 @@ header {
 	font-size: 2.4rem;
 	color: rgba(138, 138, 138, 1);
 	margin-bottom: 4rem;
-	font-family: "Manrope", sans-serif;
+	
 }
 
 .footer-links {
@@ -346,7 +349,7 @@ footer > p{
 	font-size: 1.6rem;
 	padding: 2.8rem 0;
 	text-align: center;
-	font-family: "Manrope", sans-serif;
+	
 }
 
 .cta-branding-logo > img{
@@ -594,7 +597,7 @@ footer > p{
 		font-size: 20px;
 		color: rgba(123, 123, 123, 1);
 		font-weight: 400;
-		font-family: "Manrope", sans-serif;
+		
 	}
 	.insights-text > p,.profile-text > p {
 		font-size: 19px !important;
